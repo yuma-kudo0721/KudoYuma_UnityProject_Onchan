@@ -244,7 +244,7 @@ public class Main : MonoBehaviour
             }
             touchManager.seikaiFound = 0;
             touchManager.machigaiCount = 0;
-            StartCoroutine(WaitAndSlide(1f)); // ← ここで1.5秒くらい待つ
+            StartCoroutine(WaitAndSlide(1f));
             //SlideToNext();
         }
         else if (currentObj.CompareTag("Part2") && touchManager.seikaiFound >= 1)
@@ -252,10 +252,6 @@ public class Main : MonoBehaviour
             ad.PlayOneShot(cluckerSE);
             Instantiate(effect, centerPos);
             Instantiate(effect2, centerPos);
-
-
-
-
             GameObject[] objects = GameObject.FindGameObjectsWithTag("Mark");
 
             // 各オブジェクトを削除
@@ -265,7 +261,7 @@ public class Main : MonoBehaviour
             }
             touchManager.seikaiFound = 0;
             touchManager.machigaiCount = 0;
-            StartCoroutine(WaitAndSlide(1f)); // ← ここで1.5秒くらい待つ
+            StartCoroutine(WaitAndSlide(1f));
 
         }
         else if (currentObj.CompareTag("Part3") && touchManager.seikaiFound >= 1)
@@ -273,10 +269,6 @@ public class Main : MonoBehaviour
             ad.PlayOneShot(cluckerSE);
             Instantiate(effect, centerPos);
             Instantiate(effect2, centerPos);
-
-
-
-
             GameObject[] objects = GameObject.FindGameObjectsWithTag("Mark");
 
             // 各オブジェクトを削除
@@ -294,10 +286,6 @@ public class Main : MonoBehaviour
             ad.PlayOneShot(cluckerSE);
             Instantiate(effect, centerPos);
             Instantiate(effect2, centerPos);
-
-
-
-
             GameObject[] objects = GameObject.FindGameObjectsWithTag("Mark");
 
             // 各オブジェクトを削除
